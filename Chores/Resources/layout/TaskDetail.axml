@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray">
+    <TextView
+        android:text="Task Detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txtTaskTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_weight="40"
+        android:background="@drawable/segmentedcontrolbutton_nor"
+        android:paddingLeft="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="30">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Name:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTaskLabel"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+        <TextView
+            android:text="Clean Dish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTaskName"
+            android:layout_weight="70"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <TextView
+            android:text="(New Post)"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTaskStatus"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffee932b" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="5" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearPerson"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Description:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTaskDescLabel"
+            android:layout_weight="50"
+            android:textColor="#000000" />
+        <TextView
+            android:text="Details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTaskDescription"
+            android:layout_weight="120"
+            android:ellipsize="end"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="30">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Group:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtGroupLabel"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+        <TextView
+            android:text="Test Group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtGroupName"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:text="User:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtUserLabel"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+        <TextView
+            android:text="Alex Pdro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtUserName"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="30">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Priority:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPriorityLabel"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+        <TextView
+            android:text="Mediium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPriority"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:text="Point:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPriorityLabel"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+        <TextView
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPoints"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="60">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_weight="80">
+            <TextView
+                android:text="PostDate:"
+                android:id="@+id/txtPostDateLabel"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+            <TextView
+                android:text="2014/6/25"
+                android:id="@+id/txtPostDate"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_weight="80">
+            <TextView
+                android:text="FinishDate:"
+                android:id="@+id/txtFinishDateLabel"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+            <TextView
+                android:text="2014/7/31 16:31"
+                android:id="@+id/txtFinishDate"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listBidUsers"
+        android:layout_weight="150"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:listSelector="#ffee932b" />
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearPostCancel"
+        android:layout_weight="38">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <Button
+            android:text="Accept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnAction"
+            android:layout_weight="40"
+            android:background="@drawable/segmentedcontrolbutton_selected"
+            android:textColor="#FFFFFF" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <Button
+            android:text="Cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCancel"
+            android:layout_weight="40"
+            android:background="@drawable/segmentedcontrolbutton_selected"
+            android:textColor="#FFFFFF" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+</LinearLayout>

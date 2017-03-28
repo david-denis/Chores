@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/actionbar"
+        android:id="@+id/linearTitle"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <ImageView
+            android:src="@drawable/backicon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgBack"
+            android:layout_weight="10" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <TextView
+            android:text="GROUP"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30" />
+    </LinearLayout>
+    <TextView
+        android:text="Create a Group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txtTaskTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_weight="40"
+        android:background="@drawable/segmentedcontrolbutton_nor"
+        android:paddingLeft="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="50" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtGroupName"
+            android:layout_weight="120" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <Button
+            android:text="Create"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCreateGroup"
+            android:layout_weight="60"
+            android:background="@drawable/segmentedcontrolbutton_nor"
+            android:textColor="#FFFFFF" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="120" />
+    <TextView
+        android:text="Join a Group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txtTaskTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_weight="40"
+        android:paddingLeft="10dp"
+        android:background="@drawable/segmentedcontrolbutton_nor" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearSearch"
+            android:layout_weight="120"
+            android:background="#FFFFFF">
+            <ImageView
+                android:src="@drawable/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgSearch"
+                android:layout_weight="10"
+                android:layout_marginLeft="5dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/txtSearchName"
+                android:layout_weight="120"
+                android:background="#FFFFFF"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listGroups"
+        android:layout_weight="170"
+        android:listSelector="#CCCCCC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <Button
+            android:text="Send Join Request"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSendJoin"
+            android:layout_weight="60"
+            android:background="@drawable/segmentedcontrolbutton_nor"
+            android:textColor="#FFFFFF" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="20" />
+</LinearLayout>

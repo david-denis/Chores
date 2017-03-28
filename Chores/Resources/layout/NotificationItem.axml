@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearGroupRoot">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:id="@+id/linearItem">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="5" />
+        <TextView
+            android:id="@+id/txtMessage"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:ellipsize="end" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDate"
+            android:layout_weight="25"
+            android:textColor="#000000"
+            android:gravity="center_vertical" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="5" />
+    </LinearLayout>
+</LinearLayout>

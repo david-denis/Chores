@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/actionbar"
+        android:id="@+id/linearTitle"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <ImageView
+            android:src="@drawable/backicon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgBack"
+            android:layout_weight="10" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <TextView
+            android:text="Search Task"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <TextView
+            android:text="Group"
+            android:id="@+id/txtGroup"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Spinner
+            android:id="@+id/spinGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listTasks"
+        android:layout_weight="410"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:dividerHeight="3dp"
+        android:divider="@color/transparent"
+        android:listSelector="#ffee932b" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearPostCancel"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <Button
+            android:text="Accept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnAccept"
+            android:layout_weight="40"
+            android:background="@drawable/segmentedcontrolbutton_nor"
+            android:textColor="@color/white" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="10" />
+</LinearLayout>

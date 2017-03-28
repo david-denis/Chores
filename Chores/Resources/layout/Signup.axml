@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="20" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30" />
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rlImagePhoto"
+            android:layout_weight="30">
+            <ImageView
+                android:src="@drawable/addimage"
+                android:id="@+id/imgPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="ADD IMAGE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtAddImage"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+        </RelativeLayout>
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearName"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtName"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:layout_weight="200"
+            android:hint="USER NAME"
+            android:background="#00000000"
+            android:padding="3dp"
+            android:textColorHint="#CCCCCC" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearSeperator"
+        android:layout_weight="3">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <ImageView
+            android:src="@drawable/line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:id="@+id/imgSeperator" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtEmail"
+            android:textSize="16sp"
+            android:layout_weight="200"
+            android:hint="EMAIL"
+            android:background="#00000000"
+            android:padding="3dp"
+            android:textColorHint="#CCCCCC" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearSeperator"
+        android:layout_weight="3">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <ImageView
+            android:src="@drawable/line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:id="@+id/imgSeperator" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPassword"
+            android:textSize="16sp"
+            android:layout_weight="200"
+            android:hint="PASSWORD"
+            android:background="#00000000"
+            android:padding="3dp"
+            android:textColorHint="#CCCCCC" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearSeperator"
+        android:layout_weight="3">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <ImageView
+            android:src="@drawable/line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:id="@+id/imgSeperator" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtConfirmPassword"
+            android:textSize="16sp"
+            android:layout_weight="200"
+            android:hint="RETYPE PASSWORD"
+            android:background="#00000000"
+            android:padding="3dp"
+            android:textColorHint="#CCCCCC" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRegister"
+            android:layout_weight="40"
+            android:background="@drawable/btn_register" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40" />
+        <Button
+            android:text="LOGIN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCancel"
+            android:layout_weight="40"
+            android:background="#00000000"
+            android:textColor="#AA00FF"
+            android:textSize="18sp" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space1"
+        android:layout_weight="20" />
+</LinearLayout>

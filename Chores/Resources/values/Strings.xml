@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Chores</string>
+	<string name="app_title">LET\'S DO IT</string>
+	<string name="msg_wait">Please wait...</string>
+	<string name="msg_server_error">Cannot connect to Server</string>
+	<string name="msg_register_success">Successfully Registered</string>
+</resources>

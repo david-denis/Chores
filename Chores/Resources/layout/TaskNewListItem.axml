@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeItemRoot">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearFirstline">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Clean Dishes"
+            android:id="@+id/txtTaskName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:singleLine="true" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="2014/7/25"
+            android:id="@+id/txtPostDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearSecondline"
+        android:layout_below="@+id/linearFirstline">
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Description"
+            android:id="@+id/txtDescription"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <TextView
+            android:text="Waiting"
+            android:id="@+id/txtState"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#000000" />
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+</RelativeLayout>

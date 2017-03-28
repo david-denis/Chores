@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{6C9AFC97-E302-4CBE-B780-4C3EF7006547}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Chores</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>
+    </AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>Chores</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignupActivity.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="ActivityActivity.cs" />
+    <Compile Include="ChoresActivity.cs" />
+    <Compile Include="GroupActivity.cs" />
+    <Compile Include="NotificationActivity.cs" />
+    <Compile Include="TaskActivity.cs" />
+    <Compile Include="TaskNewActivity.cs" />
+    <Compile Include="GroupNewActivity.cs" />
+    <Compile Include="Util\Global.cs" />
+    <Compile Include="Service\WebService.cs" />
+    <Compile Include="Util\ParseMgr.cs" />
+    <Compile Include="MemberItemAdapter.cs" />
+    <Compile Include="GroupItemAdapter.cs" />
+    <Compile Include="TaskDetailActivity.cs" />
+    <Compile Include="TaskItemAdapter.cs" />
+    <Compile Include="ChoresItemAdapter.cs" />
+    <Compile Include="HomeItemAdapter.cs" />
+    <Compile Include="TaskBidUserItemAdapter.cs" />
+    <Compile Include="ActivityItemAdapter.cs" />
+    <Compile Include="CameraHelper\BackgroundJob.cs" />
+    <Compile Include="CameraHelper\CropImage.cs" />
+    <Compile Include="CameraHelper\CropImageView.cs" />
+    <Compile Include="CameraHelper\HighlightView.cs" />
+    <Compile Include="CameraHelper\ImageViewTouchBase.cs" />
+    <Compile Include="CameraHelper\MonitoredActivity.cs" />
+    <Compile Include="CameraHelper\RotateBitmap.cs" />
+    <Compile Include="CameraHelper\Util.cs" />
+    <Compile Include="NotificationAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\Signup.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\drawable\logomark.png" />
+    <AndroidResource Include="Resources\drawable\user.png" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\layout\Activity.axml" />
+    <AndroidResource Include="Resources\layout\Chores.axml" />
+    <AndroidResource Include="Resources\layout\Task.axml" />
+    <AndroidResource Include="Resources\layout\Group.axml" />
+    <AndroidResource Include="Resources\layout\Notification.axml" />
+    <AndroidResource Include="Resources\layout\TaskNew.axml" />
+    <AndroidResource Include="Resources\layout\GroupNew.axml" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\bg_landscape.png" />
+    <AndroidResource Include="Resources\drawable\bg_portrait.png" />
+    <AndroidResource Include="Resources\layout\SpinnerText.axml" />
+    <AndroidResource Include="Resources\drawable\circle_yellow.png" />
+    <AndroidResource Include="Resources\layout\MemberCustomView.axml" />
+    <AndroidResource Include="Resources\drawable\customselector.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\GroupListItem.axml" />
+    <AndroidResource Include="Resources\layout\TaskNewListItem.axml" />
+    <AndroidResource Include="Resources\layout\TaskDetail.axml" />
+    <AndroidResource Include="Resources\layout\ChoresItem.axml" />
+    <AndroidResource Include="Resources\layout\HomeListItem.axml" />
+    <AndroidResource Include="Resources\layout\TaskBidUserItem.axml" />
+    <AndroidResource Include="Resources\layout\ActivityItem.axml" />
+    <AndroidResource Include="Resources\layout\cropimage.axml" />
+    <AndroidResource Include="Resources\drawable\camera_crop_height.png" />
+    <AndroidResource Include="Resources\drawable\camera_crop_width.png" />
+    <AndroidResource Include="Resources\drawable\indicator_autocrop.png" />
+    <AndroidResource Include="Resources\layout\NotificationItem.axml" />
+    <AndroidResource Include="Resources\drawable\background.png" />
+    <AndroidResource Include="Resources\drawable\ic_search.png" />
+    <AndroidResource Include="Resources\drawable\line.png" />
+    <AndroidResource Include="Resources\drawable\login_nor.png" />
+    <AndroidResource Include="Resources\drawable\login_selected.png" />
+    <AndroidResource Include="Resources\drawable\msg_back.png" />
+    <AndroidResource Include="Resources\drawable\taskya.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\addimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\btn_login.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\btn_register.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\registerbutton_nor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\registerbutton_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\actionbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\activityicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\backicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\groupicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mytaskicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\notificationicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\segmentedcontrolbutton_nor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\segmentedcontrolbutton_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tabbutton_nor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tabbutton_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\taskicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\searchicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\addnewtaskicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\canceltask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\posttask.png" />
+  </ItemGroup>
+</Project>

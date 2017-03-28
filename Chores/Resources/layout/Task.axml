@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/actionbar"
+        android:id="@+id/linearTitle"
+        android:layout_weight="50">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:text="TASK"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <ImageView
+            android:src="@drawable/addnewtaskicon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgAddNewTask"
+            android:layout_weight="10" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <TextView
+        android:text="POSTED TASKS"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txtTaskTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_weight="40"
+        android:background="#AAAAAA"
+        android:paddingLeft="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="10" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listTasks"
+        android:layout_weight="400"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/space3"
+        android:layout_weight="5" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearBtnHome"
+            android:layout_weight="40"
+            android:background="@drawable/tabbutton_nor">
+            <ImageView
+                android:src="@drawable/mytaskicon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imgBtnHome"
+                android:layout_weight="7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="MY TASK"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/txtBtnHome"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearBtnActivity"
+            android:layout_weight="40"
+            android:background="@drawable/tabbutton_nor">
+            <ImageView
+                android:src="@drawable/activityicon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imgBtnActivity"
+                android:layout_weight="7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="ACTIVITY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/txtBtnActivity"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearBtnTask"
+            android:layout_weight="40"
+            android:background="@drawable/tabbutton_selected">
+            <ImageView
+                android:src="@drawable/taskicon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imgBtnTask"
+                android:layout_weight="7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="TASK"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/txtBtnTask"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearBtnGroup"
+            android:layout_weight="40"
+            android:background="@drawable/tabbutton_nor">
+            <ImageView
+                android:src="@drawable/groupicon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imgBtnGroup"
+                android:layout_weight="7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="GROUP"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/txtBtnGroup"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearBtnNotify"
+            android:layout_weight="40"
+            android:background="@drawable/tabbutton_nor">
+            <ImageView
+                android:src="@drawable/notificationicon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imgBtnNotify"
+                android:layout_weight="7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="NOTIFICATION"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/txtBtnNotify"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

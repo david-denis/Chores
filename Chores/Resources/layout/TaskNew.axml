@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/actionbar"
+        android:id="@+id/linearCaption"
+        android:layout_weight="70">
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <ImageView
+            android:src="@drawable/canceltask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgCancel"
+            android:layout_weight="20" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:text="ADD NEW TASK"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <ImageView
+            android:src="@drawable/posttask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgPost"
+            android:layout_weight="20" />
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearGroup"
+        android:layout_weight="50"
+        android:background="@drawable/segmentedcontrolbutton_nor">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <TextView
+            android:text="SELECT GROUP"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200" />
+        <Spinner
+            android:id="@+id/spinnerGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearPerson"
+        android:layout_weight="50"
+        android:background="@drawable/segmentedcontrolbutton_selected">
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <TextView
+            android:text="SELECT USER"
+            android:id="@+id/txtPageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200" />
+        <Spinner
+            android:id="@+id/spinnerUser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200" />
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearNames"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/txtJobName"
+            android:layout_weight="40"
+            android:background="#8F8F8F"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:hint="TITLE"
+            android:textColorHint="#FFFFFF"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="250">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/txtJobDescription"
+            android:layout_weight="200"
+            android:background="#AAAAAA"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:hint="TASK DETAILS"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearTaskMain"
+        android:layout_weight="50">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearPriority"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/linearButtons"
+                android:layout_weight="40">
+                <Button
+                    android:text="Low"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPriorityLow"
+                    android:layout_weight="40"
+                    android:background="#CCCCCC"
+                    android:textSize="14sp" />
+                <Button
+                    android:text="Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPriorityMedium"
+                    android:layout_weight="40"
+                    android:background="#8F8F8F"
+                    android:textSize="14sp" />
+                <Button
+                    android:text="High"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPriorityHigh"
+                    android:layout_weight="40"
+                    android:background="#CCCCCC"
+                    android:textSize="14sp" />
+                <EditText
+                    android:inputType="numberSigned"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtJobPoint"
+                    android:layout_weight="40"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:hint="Points" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearTaskTime"
+        android:layout_weight="50">
+        <Button
+            android:text="Select Time"
+            android:id="@+id/btnSelectTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txtJobTime"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearTaskDate"
+        android:layout_weight="50">
+        <Button
+            android:text="Select Date"
+            android:id="@+id/btnSelectDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txtJobDate"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+</LinearLayout>
